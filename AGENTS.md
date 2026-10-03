@@ -10,9 +10,10 @@ Human-facing docs: [README.md](README.md), [CONTRIBUTING.md](CONTRIBUTING.md).
 ```
 pi-revdiff/
 ├── src/
-│   ├── index.ts       extension entry (tool, command, shortcut, TUI takeover)
+│   ├── index.ts       extension entry (tool, shortcut, TUI takeover)
 │   ├── config.ts      load/save pi-revdiff.json
 │   └── contract.ts    shared types and constants
+├── docs/              configuration, architecture, keybindings
 ├── test/              unit tests (node --test)
 ├── .github/workflows/ CI and publish
 ├── package.json · tsconfig.json · Makefile
