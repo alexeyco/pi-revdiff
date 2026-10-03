@@ -1,6 +1,6 @@
 {
   "name": "@alexeyco/pi-revdiff",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Interactive diff review for Pi — launch revdiff with Ctrl+R, annotate changes in-place, and feed annotations back to the agent",
   "keywords": [
     "code-review",
@@ -25,6 +25,7 @@
   "files": [
     "src",
     "assets",
+    "docs",
     "README.md",
     "CHANGELOG.md",
     "LICENSE"
