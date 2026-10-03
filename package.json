@@ -1,0 +1,62 @@
+{
+  "name": "@alexeyco/pi-revdiff",
+  "version": "0.1.0",
+  "description": "Interactive diff review for Pi — launch revdiff with Ctrl+R, annotate changes in-place, and feed annotations back to the agent",
+  "keywords": [
+    "code-review",
+    "diff",
+    "git",
+    "pi",
+    "pi-extension",
+    "pi-package",
+    "revdiff",
+    "review"
+  ],
+  "license": "MIT",
+  "author": "Alexey Popov",
+  "homepage": "https://github.com/alexeyco/pi-revdiff#readme",
+  "bugs": {
+    "url": "https://github.com/alexeyco/pi-revdiff/issues"
+  },
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "assets",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*",
+    "@earendil-works/pi-tui": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "^1.0.0",
+    "@earendil-works/pi-coding-agent": "^1.0.0",
+    "@earendil-works/pi-tui": "^1.0.0",
+    "@types/node": "^22",
+    "typescript": "^5.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexeyco/pi-revdiff.git"
+  },
+  "pi": {
+    "extensions": ["./src/index.ts"],
+    "image": "assets/hero.svg"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
