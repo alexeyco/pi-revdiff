@@ -43,9 +43,37 @@ No copy-paste. No context switching. No "hey can you look at this diff."
 
 ## Install
 
-### As a Pi extension (recommended)
+You need **Node.js 22+**, **Pi**, and **revdiff** available on your `PATH`.
+[Install revdiff separately](https://github.com/umputun/revdiff); pi-revdiff does not
+download or manage it.
 
-Copy the extension to your Pi extensions directory:
+### As a Pi package (recommended)
+
+```sh
+pi install npm:@alexeyco/pi-revdiff
+```
+
+Or from git:
+
+```sh
+pi install git:github.com/alexeyco/pi-revdiff@v0.1.0
+```
+
+### As a local extension
+
+```sh
+git clone https://github.com/alexeyco/pi-revdiff.git
+cd pi-revdiff
+npm ci
+
+# Install as a package
+pi install .
+
+# Or try without installing
+pi -e .
+```
+
+### As an extension file
 
 ```sh
 # Global (all projects)
@@ -53,18 +81,6 @@ cp -r pi-revdiff ~/.pi/agent/extensions/pi-revdiff
 
 # Or per-project
 cp -r pi-revdiff .pi/extensions/pi-revdiff
-```
-
-### As a Pi package
-
-```sh
-pi install npm:@alexeyco/pi-revdiff
-```
-
-### Try without installing
-
-```sh
-pi -e /path/to/pi-revdiff
 ```
 
 Then restart Pi or run `/reload`.

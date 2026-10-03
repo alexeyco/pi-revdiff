@@ -13,6 +13,11 @@
     "review"
   ],
   "license": "MIT",
+  "author": "Alexey Popov",
+  "homepage": "https://github.com/alexeyco/pi-revdiff#readme",
+  "bugs": {
+    "url": "https://github.com/alexeyco/pi-revdiff/issues"
+  },
   "type": "module",
   "exports": {
     ".": "./src/index.ts"
@@ -45,7 +50,11 @@
     "url": "git+https://github.com/alexeyco/pi-revdiff.git"
   },
   "pi": {
-    "extensions": ["./src/index.ts"]
+    "extensions": ["./src/index.ts"],
+    "image": "assets/hero.svg"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": ">=22"

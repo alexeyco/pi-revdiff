@@ -49,3 +49,9 @@ via `child_process.spawn` directly — no dependency on Pi's `exec` API.
 ## Release
 
 Tag-driven npm publish — see [CONTRIBUTING.md](CONTRIBUTING.md#publishing).
+
+## Gallery
+
+The `pi-package` keyword makes this package eligible for discovery in the
+[Pi package gallery](https://pi.dev/packages). The `pi.image` field points
+to `assets/hero.svg` for the gallery preview thumbnail.
