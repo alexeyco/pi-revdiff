@@ -4,9 +4,9 @@
 
 | Key | Action |
 |---|---|
-| `Ctrl+R` | Launch diff review |
+| `Ctrl+Shift+R` | Launch diff review |
 
-The extension shortcut takes precedence over Pi's built-in `Ctrl+R`
+The extension shortcut takes precedence over Pi's built-in `Ctrl+Shift+R`
 (session rename) when active.
 
 ## Inside revdiff

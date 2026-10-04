@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 120" font-family="monospace">
   <rect width="800" height="120" rx="8" fill="#24283b"/>
 
-  <!-- 1: Ctrl+R -->
+  <!-- 1: Ctrl+Shift+R -->
   <rect x="40" y="30" width="140" height="60" rx="6" fill="#3d59a1" opacity="0.2"/>
-  <text x="110" y="68" text-anchor="middle" fill="#7aa2f7" font-size="18" font-weight="bold">Ctrl+R</text>
+  <text x="110" y="68" text-anchor="middle" fill="#7aa2f7" font-size="18" font-weight="bold">Ctrl+Shift+R</text>
 
   <line x1="190" y1="60" x2="230" y2="60" stroke="#565f89" stroke-width="2"/>
   <polygon points="230,56 240,60 230,64" fill="#565f89"/>

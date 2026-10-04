@@ -1,7 +1,7 @@
 /**
  * @alexeyco/pi-revdiff
  *
- * Pi extension that registers a `review` tool and a `Ctrl+R` shortcut. Launches the revdiff TUI directly as a child process,
+ * Pi extension that registers a `review` tool and a `Ctrl+Shift+R` shortcut. Launches the revdiff TUI directly as a child process,
  * captures annotations via `-o` temp file, and delivers them back to the agent.
  *
  * TUI takeover uses ctx.ui.custom() — tui.stop() before spawn, tui.start()
@@ -14,7 +14,7 @@ import {
   type ExtensionContext,
   type ExtensionToolContext,
 } from "@earendil-works/pi-coding-agent";
-import { Key } from "@earendil-works/pi-tui";
+import { type KeyId } from "@earendil-works/pi-tui";
 import { spawn } from "node:child_process";
 import { mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
@@ -312,7 +312,7 @@ export default function piRevdiff(pi: ExtensionAPI) {
 
   pi.registerTool(reviewTool);
 
-  pi.registerShortcut(Key.ctrl("r"), {
+  pi.registerShortcut(config.shortcut as KeyId, {
     description: "Launch interactive diff review",
     handler: async (ctx) => {
       if (ctx.mode !== "tui") {

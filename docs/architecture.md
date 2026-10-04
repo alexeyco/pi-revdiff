@@ -7,7 +7,7 @@ no external wrapper.
 
 ```
 ┌──────────────┐     ┌──────────────┐     ┌──────────────┐
-│   Ctrl+R     │────▶│   revdiff    │────▶│  Annotations │
+│   Ctrl+Shift+R     │────▶│   revdiff    │────▶│  Annotations │
 │  (shortcut)  │     │  (child TUI) │     │  (-o file)   │
 └──────────────┘     └──────────────┘     └──────┬───────┘
                                                  │
@@ -20,7 +20,7 @@ no external wrapper.
 
 ## Steps
 
-1. **Ctrl+R** sends a steer message to the agent asking it to run a
+1. **Ctrl+Shift+R** sends a steer message to the agent asking it to run a
    review.
 2. The agent calls the `review` tool, which:
    - Runs `git add -A` to stage all changes.

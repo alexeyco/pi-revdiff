@@ -1,7 +1,7 @@
 # @alexeyco/pi-revdiff
 
 <p align="center">
-  <img src="assets/hero.svg" alt="Ctrl+R → review → annotate → fix" width="800">
+  <img src="assets/hero.svg" alt="Ctrl+Shift+R → review → annotate → fix" width="800">
 </p>
 
 <p align="center">
@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
-  <code>Ctrl+R</code> → review your diff → leave annotations → the agent fixes it
+  <code>Ctrl+Shift+R</code> → review your diff → leave annotations → the agent fixes it
 </p>
 
 ---
 
 Code review should not happen in a separate window or tool.
 **pi-revdiff** keeps the entire loop inside your terminal: press
-`Ctrl+R`, annotate lines in the revdiff TUI, close the viewer — the
+`Ctrl+Shift+R` (configurable), annotate lines in the revdiff TUI, close the viewer — the
 agent reads your annotations and makes the fixes.
 
 ## Install
@@ -30,7 +30,7 @@ Requires [Pi](https://github.com/earendil-works/pi) and
 
 ## Usage
 
-Press `Ctrl+R` or ask the agent to `review` your changes.
+Press `Ctrl+Shift+R` or ask the agent to `review` your changes.
 
 ## Docs
 
