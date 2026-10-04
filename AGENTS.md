@@ -1,6 +1,6 @@
 # @alexeyco/pi-revdiff
 
-Pi extension that registers a `review` tool and a `Ctrl+R` shortcut —
+Pi extension that registers a `review` tool and a `Ctrl+Shift+R` shortcut —
 launching the revdiff TUI for interactive diff review with annotation capture.
 
 Human-facing docs: [README.md](README.md), [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -40,7 +40,7 @@ The extension has two integration points:
    screen, spawns `revdiff` as a child process with `stdio: "inherit"`,
    reads annotations from `-o` temp file on exit, `tui.start()` restores
    Pi's TUI. No external launcher or wrapper scripts.
-2. **`Ctrl+R` shortcut** — registered via `pi.registerShortcut()`.
+2. **`Ctrl+Shift+R` shortcut** — registered via `pi.registerShortcut()`.
    Sends a steer message to the model asking it to run a review.
 
 Configuration is stored in `~/.pi/agent/pi-revdiff.json` and loaded on

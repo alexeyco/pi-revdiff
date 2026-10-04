@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.2.0
+
+### Changed
+
+- Default shortcut changed from `Ctrl+R` to `Ctrl+Shift+R` to avoid conflict with Pi's built-in session rename.
+- Shortcut is now configurable via `shortcut` field in `~/.pi/agent/pi-revdiff.json`. Supports modifiers (`ctrl`, `shift`, `alt`, `super`) and any single character or special key (f1–f12, escape, pageUp, etc.).
+
 ## 0.1.1
 
 ### Documentation

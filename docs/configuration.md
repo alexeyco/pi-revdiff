@@ -9,7 +9,8 @@ session start.
 {
   "ref": "HEAD",
   "staged": false,
-  "delivery": "steer"
+  "delivery": "steer",
+  "shortcut": "ctrl+shift+r"
 }
 ```
 
@@ -20,6 +21,7 @@ session start.
 | `ref` | string | `"HEAD"` | Default Git ref to diff against |
 | `staged` | boolean | `false` | Review staged changes only |
 | `delivery` | `"steer"` \| `"followUp"` | `"steer"` | How annotations reach the agent |
+| `shortcut` | string | `"ctrl+shift+r"` | Keyboard shortcut to launch review |
 
 ### `delivery`
 
@@ -27,6 +29,17 @@ session start.
   feedback).
 - **followUp** — annotations queue after the current response finishes
   (non-blocking).
+
+### `shortcut`
+
+Keyboard shortcut to launch the review. Format: `modifier+key` where
+modifier is `ctrl`, `shift`, `alt`, or `super`, and key is a single
+character or special key name.
+
+Examples:
+- `"ctrl+shift+r"` (default)
+- `"ctrl+alt+r"`
+- `"alt+r"`
 
 ## Editing
 
