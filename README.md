@@ -1,5 +1,8 @@
 # @alexeyco/pi-revdiff
 
+> **Deprecated:** This package is no longer maintained. Use
+> [herdr-review](https://github.com/alexeyco/herdr-review) instead.
+
 <p align="center">
   <img src="assets/hero.svg" alt="Ctrl+Shift+R → review → annotate → fix" width="800">
 </p>
